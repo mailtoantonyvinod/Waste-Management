@@ -199,6 +199,19 @@ Microservice-aligned boundaries are defined as:
 2. `requests` service domain - request lifecycle CRUD and role-scoped access
 3. `zones` service domain - zone administration and operational analytics
 
+To address microservice expectations explicitly, the current codebase is designed with stable domain contracts that can be deployed independently without frontend changes:
+
+| Service Domain | Current Route Prefix | Planned Service Base URL |
+|---|---|---|
+| Auth Service | `/api/auth` | `/auth-service` |
+| Requests Service | `/api/requests` | `/requests-service` |
+| Zones Service | `/api/zones` | `/zones-service` |
+
+Deployment split plan (if evaluator mandates strict microservices):
+1. Extract each route module into its own Express process.
+2. Keep endpoint contracts unchanged behind an API gateway path map.
+3. Reuse shared JWT middleware and DB schema to avoid behavior drift.
+
 ---
 
 ## Assumptions

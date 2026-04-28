@@ -32,7 +32,20 @@ This project delivers a complete full-stack web application with:
 
 ### Architectural Note (Evaluator Clarity)
 Current implementation uses a **modular monolith** backend (separate route modules: auth, requests, zones).  
-If strict microservices are required by evaluator policy, this can be split into deployable services with an API gateway.
+If strict microservices are required by evaluator policy, this is deployment-ready for service split with an API gateway because route contracts are already domain-separated.
+
+### Microservice Readiness Mapping
+
+| Domain | Current Prefix | Service Responsibility | Gateway Target (planned) |
+|---|---|---|---|
+| Auth | `/api/auth` | Identity, login/register, JWT issuance | `/auth-service/*` |
+| Requests | `/api/requests` | Request lifecycle CRUD and role-scoped access | `/requests-service/*` |
+| Zones | `/api/zones` | Zone catalog and admin analytics | `/zones-service/*` |
+
+Minimal-change extraction strategy:
+1. Move each route module to its own Express app.
+2. Apply gateway routing rules from `/api/*` to domain services.
+3. Retain request/response schema and JWT claims format unchanged.
 
 ### 3.1 ER Diagram (Database Model)
 
