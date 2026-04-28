@@ -1,6 +1,6 @@
 # AI Usage Log & Reflection Report
 **SE ZG503 – Full Stack Application Development**  
-**Student:** <Enter Name Before Submission> | **ID:** <Enter BITS ID Before Submission>  
+**Student:** Pending from student before submission | **ID:** Pending from student before submission  
 **Tool Used:** Claude (claude.ai) – Claude Sonnet  
 
 ---
@@ -72,5 +72,5 @@ Claude accelerated my development speed by 3–4x for this project. The value is
 
 ---
 
-*Report written by: <Enter Name Before Submission>*  
-*Date: <Enter Submission Date>*
+*Report written by: Pending from student before submission*  
+*Date: Pending from student before submission*

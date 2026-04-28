@@ -34,6 +34,36 @@ This project delivers a complete full-stack web application with:
 Current implementation uses a **modular monolith** backend (separate route modules: auth, requests, zones).  
 If strict microservices are required by evaluator policy, this can be split into deployable services with an API gateway.
 
+### 3.1 ER Diagram (Database Model)
+
+```mermaid
+erDiagram
+  USERS ||--o{ PICKUP_REQUESTS : creates
+  USERS ||--o{ PICKUP_REQUESTS : handles
+  ZONES ||--o{ PICKUP_REQUESTS : includes
+  ZONES ||--o{ USERS : assigns
+```
+
+### 3.2 UI/UX Wireframe (Functional Layout)
+
+```text
+Login/Register -> Role Routing -> Dashboard
+
+Resident Dashboard:
+  [Create Request Form]
+  [My Requests List + Status + Cancel Pending]
+
+Worker Dashboard:
+  [Zone Request Queue]
+  [Accept / Complete / Reject + Notes]
+
+Admin Dashboard:
+  [Overall Metrics]
+  [Zone Breakdown]
+  [Workers Summary]
+  [All Requests Table + Filters]
+```
+
 ## 4. Frontend Design and Component Hierarchy
 
 ```text
@@ -160,11 +190,20 @@ App
 - Manual work included review, customization, debugging, and final validation
 - Reflection includes benefits, limitations, and learning outcomes
 
-## 11. Submission Links (To Fill Before LMS Upload)
+## 11. Submission Links
 
-- **GitHub Repository (Public):** `<add-link>`
-- **Demo Video (Google Drive):** `<add-link>`
-- **Any additional artifacts:** `<add-link>`
+- **GitHub Repository (Public):** Pending from student before LMS submission
+- **Demo Video (Google Drive):** Pending from student before LMS submission
+- **Any additional artifacts:** Pending from student before LMS submission
+
+## 11.1 Demo Video Checklist (Evaluator-Focused)
+
+Include these steps in the recording:
+1. Backend + frontend startup commands
+2. Resident login and request creation
+3. Worker login and request lifecycle update
+4. Admin login and zone/worker analytics validation
+5. Role-based access control proof (forbidden actions blocked)
 
 ## 12. Run Instructions (Quick Reference)
 
