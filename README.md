@@ -199,8 +199,6 @@ Microservice-aligned boundaries are defined as:
 2. `requests` service domain - request lifecycle CRUD and role-scoped access
 3. `zones` service domain - zone administration and operational analytics
 
-If your evaluator strictly requires independently deployable microservices, these modules can be extracted with minimal API contract changes and fronted by an API gateway. For this assignment, this design provides full-stack integration and separation-of-concerns while keeping local setup simple.
-
 ---
 
 ## Assumptions
