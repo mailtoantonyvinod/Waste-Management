@@ -175,13 +175,13 @@ App
 4. JWT expiry configured for demo usability.
 5. Backend runs as one service with modular structure.
 
-## 9. Demonstration Workflow (For Video)
+## 9. Workflow
 
 1. Start backend and frontend.
 2. Login as resident -> create pickup request.
 3. Login as worker -> accept and complete request.
 4. Login as admin -> verify zone stats and overall monitoring.
-5. Show role-based route behavior and permission boundaries.
+5. Role-based route behavior and permission boundaries.
 
 ## 10. AI-Assisted Development Summary
 
@@ -195,15 +195,6 @@ App
 - **GitHub Repository (Public):** Pending from student before LMS submission
 - **Demo Video (Google Drive):** Pending from student before LMS submission
 - **Any additional artifacts:** Pending from student before LMS submission
-
-## 11.1 Demo Video Checklist (Evaluator-Focused)
-
-Include these steps in the recording:
-1. Backend + frontend startup commands
-2. Resident login and request creation
-3. Worker login and request lifecycle update
-4. Admin login and zone/worker analytics validation
-5. Role-based access control proof (forbidden actions blocked)
 
 ## 12. Run Instructions (Quick Reference)
 
@@ -224,5 +215,3 @@ npm start
 ```
 
 ---
-
-Prepared for SE ZG503 submission packaging and evaluator review.
