@@ -190,7 +190,7 @@ See `AI_USAGE_LOG.md` for detailed prompts and reflection.
 
 ---
 
-## Assignment Alignment Notes
+## Notes
 
 This implementation follows a modular backend in a single Node.js service (`auth`, `requests`, and `zones` route modules), with clear service boundaries.
 
@@ -206,11 +206,6 @@ To address microservice expectations explicitly, the current codebase is designe
 | Auth Service | `/api/auth` | `/auth-service` |
 | Requests Service | `/api/requests` | `/requests-service` |
 | Zones Service | `/api/zones` | `/zones-service` |
-
-Deployment split plan (if evaluator mandates strict microservices):
-1. Extract each route module into its own Express process.
-2. Keep endpoint contracts unchanged behind an API gateway path map.
-3. Reuse shared JWT middleware and DB schema to avoid behavior drift.
 
 ---
 
