@@ -27,7 +27,9 @@ Residents in a neighbourhood need an easy way to raise waste pickup requests. Mu
 
 ---
 
-## Setup & Run
+## Fresh clone setup
+
+> For a new clone, install dependencies first and then start backend and frontend separately.
 
 ### Prerequisites
 - Node.js 18+ (validated on Node 24 as well)
@@ -37,7 +39,7 @@ Residents in a neighbourhood need an easy way to raise waste pickup requests. Mu
 ```bash
 cd backend
 npm install
-copy .env.example .env
+cp .env.example .env
 npm run seed      # Populate demo data
 npm run dev       # Starts on http://localhost:5000
 ```
@@ -46,7 +48,7 @@ npm run dev       # Starts on http://localhost:5000
 ```bash
 cd frontend
 npm install
-npm start         # Starts on http://localhost:3000
+npm run dev       # Starts on http://localhost:5173
 ```
 
 ### Demo Credentials

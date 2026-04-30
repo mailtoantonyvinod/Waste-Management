@@ -209,13 +209,15 @@ App
 - **Demo Video (Google Drive):** Pending from student before LMS submission
 - **Any additional artifacts:** Pending from student before LMS submission
 
-## 12. Run Instructions (Quick Reference)
+## 12. Fresh Clone Setup (Quick Reference)
+
+> For a new clone, install dependencies and start each app separately.
 
 ### Backend
 ```bash
 cd backend
 npm install
-copy .env.example .env
+cp .env.example .env
 npm run seed
 npm run dev
 ```
@@ -224,7 +226,7 @@ npm run dev
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 ---
