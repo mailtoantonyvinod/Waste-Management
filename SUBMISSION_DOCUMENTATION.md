@@ -22,8 +22,8 @@ This project delivers a complete full-stack web application with:
 ```text
 ┌──────────────────────────┐       HTTP/JSON       ┌──────────────────────────┐
 │      React Frontend      │  <----------------->  │     Node.js Backend      │
-│ (Routing + Role Dashboards)                     │ (Express REST API Layer) │
-└───────────────┬──────────┘                       └──────────────┬───────────┘
+│ (Routing + Role Dashboards)                      │ (Express REST API Layer) │
+└───────────────┬──────────┘                       └────────────────┬─────────┘
                 │                                                   │
                 │                                                   │
                 └───────────────────────────────────────────────────┘
