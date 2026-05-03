@@ -1,8 +1,9 @@
 # SE ZG503 Full Stack Assignment Documentation
 
+
 ## Project Overview
 
-**Title:** # 🌱 Neighbourhood Waste Pickup Request Portal
+**Title:**  🌱 Neighbourhood Waste Pickup Request Portal
 
 **Problem Statement:** Residents need a reliable way to raise waste pickup requests, workers need a zone-wise operational view, and admins need monitoring/control over requests, workers, and zone metrics.
 
@@ -12,7 +13,9 @@ This project delivers a complete full-stack web application with:
 - SQLite database for persistent storage
 
 ---
----
+
+- **GitHub Repository (Public):** https://github.com/mailtoantonyvinod/Waste-Management.git
+- **Demo Video (Google Drive):** https://drive.google.com/file/d/1pwW9k8UUokd6jvdbC_Mxz3vCOcCfbRvN/view?usp=drive_link
 
 ## Architecture
 
