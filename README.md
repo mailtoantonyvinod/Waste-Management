@@ -1,14 +1,17 @@
-# 🌱 Neighbourhood Waste Pickup Request Portal
+# SE ZG503 Full Stack Assignment Documentation
 
-> SE ZG503 Full Stack Application Development Assignment  
-> **Stack:** React + Node.js + SQLite  
+## Project Overview
+
+**Title:** # 🌱 Neighbourhood Waste Pickup Request Portal
+
+**Problem Statement:** Residents need a reliable way to raise waste pickup requests, workers need a zone-wise operational view, and admins need monitoring/control over requests, workers, and zone metrics.
+
+This project delivers a complete full-stack web application with:
+- React frontend for role-based user experience
+- Node.js + Express backend for business logic and APIs
+- SQLite database for persistent storage
 
 ---
-
-## Problem Statement
-
-Residents in a neighbourhood need an easy way to raise waste pickup requests. Municipal workers need to manage and mark pickups complete. The admin needs to track request status across zones.
-
 ---
 
 ## Architecture
@@ -24,7 +27,13 @@ Residents in a neighbourhood need an easy way to raise waste pickup requests. Mu
                                                     │   DB    │
                                                     └─────────┘
 ```
+## Technology Stack
+- **Frontend:** React, React Router, Axios
+- **Backend:** Node.js, Express, JWT, bcryptjs
+- **Database:** SQLite (`better-sqlite3`)
+- **Dev Tools:** Nodemon, npm scripts
 
+```
 ---
 
 ## Fresh clone setup
@@ -50,13 +59,6 @@ cd frontend
 npm install
 npm run dev       # Starts on http://localhost:5173
 ```
-
-### Demo Credentials
-| Role     | Email                  | Password    |
-|----------|------------------------|-------------|
-| Admin    | admin@waste.com        | password123 |
-| Worker   | worker1@waste.com      | password123 |
-| Resident | resident1@waste.com    | password123 |
 
 ---
 
@@ -217,3 +219,11 @@ To address microservice expectations explicitly, the current codebase is designe
 2. Residents are pre-assigned to a zone on registration; the admin can manage zone assignments.
 3. Workers see only open requests (pending/assigned) from their zone; completed ones are archived.
 4. JWT tokens expire in 7 days.
+
+### Demo Credentials
+| Role     | Email                  | Password    |
+|----------|------------------------|-------------|
+| Admin    | admin@waste.com        | password123 |
+| Worker   | worker1@waste.com      | password123 |
+| Resident | resident1@waste.com    | password123 |
+
